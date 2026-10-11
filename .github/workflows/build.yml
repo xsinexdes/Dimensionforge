@@ -23,13 +23,13 @@ jobs:
         run: gradle build --no-daemon --stacktrace
       - name: Resultados de los tests
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: test-reports
           path: build/reports/tests/
           if-no-files-found: ignore
       - name: Subir jar
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: DimensionForge
           path: build/libs/DimensionForge-*.jar
