@@ -1,0 +1,46 @@
+# Ejemplo: dimensión "minas" (se crea sola al arrancar si no existe el mundo)
+dimensions:
+  minas:
+    environment: NORMAL
+    type: AMPLIFIED
+    generator: VANILLA
+    seed-text: "minas-2026"
+    structures: true
+    autoload: true
+    spawn:
+      enabled: true
+      x: 0.5
+      y: 100.0
+      z: 0.5
+      yaw: 0.0
+      pitch: 0.0
+    border:
+      enabled: true
+      size: 2000.0
+      x: 0.0
+      z: 0.0
+    time:
+      mode: FIXED
+      fixed: 18000
+    weather: CLEAR
+    rules:
+      difficulty: HARD
+      pvp: false
+      spawn-monsters: true
+      spawn-animals: false
+      keepInventory: false
+      mobGriefing: false
+      doFireTick: false
+      doDaylightCycle: false
+      doWeatherCycle: false
+      doImmediateRespawn: false
+      randomTickSpeed: 3
+    enter:
+      game-mode: NONE
+      message: "<gold>Bajas a las <bold>Minas Profundas</bold>… no estás solo."
+      title: "<gold>Minas Profundas"
+    exit:
+      message: "<gray>Vuelves a la superficie."
+      title: ""
+    permission: ""
+    skills-enabled: true
