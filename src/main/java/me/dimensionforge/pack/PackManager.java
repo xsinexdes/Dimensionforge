@@ -388,7 +388,9 @@ public final class PackManager {
             return false;
         }
         boolean force = plugin.getConfig().getBoolean("pack.force", false);
-        Component prompt = me.dimensionforge.util.Text.mm(plugin.messages().raw("pack.prompt"));
+        // En Paper 1.21.1 addResourcePack recibe el aviso como String (formato clásico con §)
+        String prompt = net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer.legacySection()
+                .serialize(me.dimensionforge.util.Text.mm(plugin.messages().raw("pack.prompt")));
         p.addResourcePack(OWN_ID, url, sha1, prompt, force);
         String bm = bettermodelUrl();
         if (bm != null) {
