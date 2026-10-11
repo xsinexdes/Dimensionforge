@@ -1,0 +1,15 @@
+== Resultado esperado del pack con examples/pack/textures/ore/mithril_ore.png ==
+(pack.format-mode: legacy, pack-format 34, base-material PAPER, cmd 100000 de cmd_registry.yml)
+Solo hay que dejar el PNG en plugins/DimensionForge/pack/textures/ore/ y ejecutar /dimension pack build.
+
+DimensionForge.zip
+├── pack.mcmeta
+├── assets/dimensionforge/models/ore/mithril_ore.json
+├── assets/dimensionforge/textures/ore/mithril_ore.png
+└── assets/minecraft/models/item/paper.json
+
+--- assets/minecraft/models/item/paper.json
+{"parent":"minecraft:item/generated","textures":{"layer0":"minecraft:item/paper"},"overrides":[{"predicate":{"custom_model_data":100000},"model":"dimensionforge:ore/mithril_ore"}]}
+
+--- assets/dimensionforge/models/ore/mithril_ore.json  (lo crea el plugin solo)
+{"parent":"minecraft:block/cube_all","textures":{"all":"dimensionforge:ore/mithril_ore"}}
