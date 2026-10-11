@@ -1,7 +1,5 @@
 package me.dimensionforge.pack;
 
-import com.google.gson.JsonObject;
-
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -164,21 +162,15 @@ public final class OreTextures {
         return "ore/" + n.substring(0, n.length() - 4).toLowerCase(Locale.ROOT);
     }
 
-    /** JSON del modelo: un cubo de Minecraft con las texturas de la mena. */
+    /** JSON del modelo: un cubo de Minecraft con las texturas de la mena (los nombres solo llevan a-z, 0-9 y _). */
     public static String modelJson(Entry e) {
-        JsonObject m = new JsonObject();
-        JsonObject t = new JsonObject();
         if (e.sided()) {
-            m.addProperty("parent", "minecraft:block/cube_bottom_top");
-            t.addProperty("top", "dimensionforge:" + texName(e.top()));
-            t.addProperty("bottom", "dimensionforge:" + texName(e.bottom()));
-            t.addProperty("side", "dimensionforge:" + texName(e.side()));
-        } else {
-            m.addProperty("parent", "minecraft:block/cube_all");
-            t.addProperty("all", "dimensionforge:" + texName(e.all()));
+            return "{\"parent\":\"minecraft:block/cube_bottom_top\",\"textures\":{"
+                    + "\"top\":\"dimensionforge:" + texName(e.top()) + "\","
+                    + "\"bottom\":\"dimensionforge:" + texName(e.bottom()) + "\","
+                    + "\"side\":\"dimensionforge:" + texName(e.side()) + "\"}}";
         }
-        m.add("textures", t);
-        return m.toString();
+        return "{\"parent\":\"minecraft:block/cube_all\",\"textures\":{\"all\":\"dimensionforge:" + texName(e.all()) + "\"}}";
     }
 
     /** Añade al mapa del pack los archivos PNG (y .mcmeta) de la mena. */
