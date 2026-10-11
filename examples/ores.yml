@@ -1,0 +1,65 @@
+# Ejemplo: mena de mithril, solo en la dimensión "minas", necesita pico de hierro o mejor
+ores:
+  mithril:
+    dimension: minas
+    base: DEEPSLATE_DIAMOND_ORE
+    enabled: true
+    appearance: BLOCK
+    model: ""
+    tool:
+      mode: TIER
+      min-tier: IRON
+      pickaxe-only: true
+      material: ""
+      cmd: 0
+      name: ""
+      wrong-breaks: false
+      wrong-drops: false
+      wrong-sound: block.note_block.bass
+    hardness: 6.0
+    apply-modifiers: true
+    hit-sound: block.amethyst_block.hit
+    durability:
+      cost: 2
+      none: false
+    drops:
+      0:
+        material: PAPER
+        min: 1
+        max: 3
+        cmd: 100000
+        name: "<aqua><bold>Mithril"
+        lore:
+          - "<gray>Mineral brillante de las Minas Profundas."
+        chance: 100.0
+      1:
+        material: DIAMOND
+        min: 1
+        max: 1
+        cmd: 0
+        name: ""
+        lore: []
+        chance: 15.0
+    fortune: true
+    silk-touch-drops-block: false
+    drops-to-inventory: false
+    xp:
+      min: 3
+      max: 7
+    effects:
+      particle: BLOCK
+      particle-count: 25
+      sound: block.deepslate.break
+    respawn:
+      seconds: 90
+      depleted: DEEPSLATE
+    generation:
+      enabled: true
+      vein-size: 5
+      veins-per-chunk: 3.0
+      y-min: -60
+      y-max: 20
+      biomes: []
+      replace:
+        - STONE
+        - DEEPSLATE

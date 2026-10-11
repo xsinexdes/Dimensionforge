@@ -1,0 +1,5 @@
+# Registro estable de CustomModelData (lo mantiene el plugin; no cambies los números ya entregados)
+next: 100001
+models:
+  ore:
+    mithril_ore: 100000

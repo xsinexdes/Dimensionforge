@@ -1,0 +1,137 @@
+{
+ "meta": {
+  "format_version": "4.10",
+  "model_format": "free",
+  "box_uv": false
+ },
+ "name": "mithril_ore",
+ "model_identifier": "",
+ "visible_box": [
+  1,
+  1,
+  0
+ ],
+ "variable_placeholders": "",
+ "variable_placeholder_buttons": [],
+ "unhandled_marks": [],
+ "timeline_setups": [],
+ "resolution": {
+  "width": 16,
+  "height": 16
+ },
+ "elements": [
+  {
+   "name": "cuerpo",
+   "box_uv": false,
+   "rescale": false,
+   "locked": false,
+   "light_emission": 0,
+   "render_order": "default",
+   "allow_mirror_modeling": true,
+   "from": [
+    2,
+    0,
+    2
+   ],
+   "to": [
+    14,
+    12,
+    14
+   ],
+   "autouv": 0,
+   "color": 0,
+   "origin": [
+    8.0,
+    0,
+    8.0
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "uuid": "34afe2dd-15fd-4e38-91ad-884182c1e834",
+   "faces": {
+    "north": {
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "texture": 0
+    },
+    "east": {
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "texture": 0
+    },
+    "south": {
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "texture": 0
+    },
+    "west": {
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "texture": 0
+    },
+    "up": {
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "texture": 0
+    },
+    "down": {
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "texture": 0
+    }
+   },
+   "type": "cube"
+  }
+ ],
+ "outliner": [
+  "34afe2dd-15fd-4e38-91ad-884182c1e834"
+ ],
+ "textures": [
+  {
+   "path": "",
+   "name": "mithril_ore.png",
+   "folder": "block",
+   "namespace": "",
+   "id": "0",
+   "particle": false,
+   "render_mode": "default",
+   "render_sides": "auto",
+   "frame_time": 1,
+   "frame_order_type": "loop",
+   "frame_order": "",
+   "frame_interpolate": false,
+   "visible": true,
+   "internal": true,
+   "saved": true,
+   "uuid": "30207646-0be3-47ff-801c-6691247efdfc",
+   "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACdElEQVR4nEXTN5IEORADwH4nW7AFtSZnZnfUj+8ROMQad0ZZFQEjqzAJoXBIC6cCqs9YS4MSN0T5g6Fe2P0XthgU4bHIhEtVBD/QywNSPDFZ/UAJTyz1g2vWCLtD1xEyFJjakec75v0Xp37DB4VWLbY5QO8ZSTdMc8s4lwZ/3NDMD7b4gm5fpMVAHB6HSXCxoraBdXlAHU9E88GIGntzmNypUa3DmiKe/+BvxnnHbn9h0xulKyyrxXUGBJvRU4PsN5j1B/l8YVryD67xQti+6JeBdB4mJ+RRMW8D5/WAd8//wvXmkK4I4QqO3DF5WdBUx+bv0OUXSbwhJGEVYT1hC2EFYSVhFWE9YQthBWGlx7QGA1U94pww9opdD9hA2ErYmbA7YTVhA2ErYWfC7oTVhA1vTGH5RT/ekEbBRIvcAuaFsAdhDWEjYRthF8IehDWEjYRthF0Gps1W6DSQ+gNifeI4P3CWsImwPUKtBfHsGJawibCdsCthT8LagCkOi7EF7FeGdQ0l37AMwm6EvQjrCJsJOwi7EfYirCNsfqKNDyapnjD+g1w0ZuFwyv/PuRXCCsJKwirCesIWwgrCSsKqG6ZUG8R8w7H/wOkXavhireYvIO6E1YQNhK2EnQm7E1YTNhC2Rkz74WBNRIkFS+u4ljvCQVhD2EjYRtiFsAdhTfsLbo2wC2GPL6acXpj792/hT49mE7ZE2E7YlbAnYS1hE2E7YVfCnoS1hE13TMfW4a47qvvFmt9QQyFuhL0I6wibCTsIuxH2IqwjbCbsIOyWMBXPmhbWVLCmkjVVrKknbCGsIKwkrIrwnh9b+LGCsJKwirBe4V+/kEVa3FDRUQAAAABJRU5ErkJggg=="
+  }
+ ]
+}
