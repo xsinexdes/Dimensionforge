@@ -21,7 +21,7 @@ dependencies {
     // API de Paper para Minecraft 1.21.1
     compileOnly("io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT")
     // BetterModel (soft-depend). 2.2.0 es la última línea que soporta 1.21.1
-    compileOnly("io.github.toxicity188:bettermodel-bukkit-api:2.2.0")
+    compileOnly("io.github.toxicity188:bettermodel-bukkit-api:3.6.0")
 
     testImplementation("org.junit.jupiter:junit-jupiter:5.10.2")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.10.2")
